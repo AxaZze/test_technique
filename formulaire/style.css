@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #999A9D;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 600px;
+    background-color: #38393B;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    margin: 0 auto;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px; 
+}
+
+#logo {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+#header-text {
+    color: #70BB43;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 800;
+    line-height: normal;
+}
+#header2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 100%; 
+    padding: 0 20px; 
+}
+
+#logo2 {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+#header-text2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 5px;
+    font-weight: 800;
+    line-height: normal;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.form-field button {
+    padding: 10px 20px;
+    background-color: #38393B;
+    color: #70BD44;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.form-field button:hover {
+    background-color: #38393B;
+}
+
+.field-label {
+    color: #FFF;  /* Remplacer par la couleur désirée */
+}
