@@ -38,12 +38,14 @@
             $to = "cyprien.prouvot@gmail.com";
             $subject = "Nouvelle inscription";
             $message = "Un nouvel utilisateur s'est inscrit. Voici les informations fournies :\n\n" . 
-            "Nom : " . $name . "\n" . 
-            "Prénom : " . $prenom . "\n" .
-            "Fonction : " . ($fonction ?? "Non fourni") . "\n" .
-            "Téléphone : " . $tel . "\n" .
-            "Entreprise : " . $entreprise . "\n" .
-            "E-mail : " . $email;
+                        "Nom : " . $name . "\n" . 
+                        "Prénom : " . $prenom . "\n" .
+                        "Fonction : " . ($fonction ?? "Non fourni") . "\n" .
+                        "Téléphone : " . $tel . "\n" .
+                        "Entreprise : " . $entreprise . "\n" .
+                        "E-mail : " . $email . "\n" .
+                        "Demande : " . $demande . "\n" .  
+                        "Description : " . $description;
             $headers = "de ". $email;
             
             mail($to, $subject, $message, $headers);
