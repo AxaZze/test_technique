@@ -1,0 +1,6 @@
+name: Newsletter Subscription
+description: Module custome qui enregistre une inscription et le sauvegarde dans une node
+package: Custom
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
