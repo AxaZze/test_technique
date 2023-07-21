@@ -88,7 +88,7 @@ class NewsletterSubscriptionForm extends FormBase {
   // validateForm() effectue une vérification de validité de l'email.
   public function validateForm(array &$form, FormStateInterface $form_state) {
     if (!filter_var($form_state->getValue('email'), FILTER_VALIDATE_EMAIL)) {
-      $form_state->setErrorByName('email', $this->t('The email address %email is not valid.', ['%email' => $form_state->getValue('email')]));
+      $form_state->setErrorByName('email', $this->t('L'adresse  %email n'est pas valide.', ['%email' => $form_state->getValue('email')]));
     }
   }
 
@@ -108,7 +108,7 @@ class NewsletterSubscriptionForm extends FormBase {
     $node->save();
 
     // Affichage d'un message de succès
-    $this->messenger->addStatus($this->t('Votre soumission a bien été prise en compte.'));
+    $this->messenger->addStatus($this->t('Votre inscription a bien été prise en compte.'));
 
     // Redirection vers la page d'accueil
     $form_state->setRedirect('<front>');
